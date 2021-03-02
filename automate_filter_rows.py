@@ -34,7 +34,7 @@ def main():
     df_id_name_remove.to_excel(output_file_name)
     
     #get the ref= match
-    df_ref = df_id_name_remove[df_id_name_remove["ElementPathParametersMain ID elementMain NAME element"].str.contains("ref=")]
+    df_ref = df_id_name_remove[df_id_name_remove["ElementPathParametersMain ID elementMain NAME element"].str.contains("/infrastructure/logicalElements/boundaries/boundary/location/tracksideAbsoluteLocation/measurementUncertainty/value=")]
     
     # print number of rows starts with id
     #df_id = df_id_name_remove[df_id_name_remove["ElementPathParametersMain ID elementMain NAME element"].str.contains("id=")]
